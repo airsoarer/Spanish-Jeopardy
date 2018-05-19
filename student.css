@@ -9,10 +9,10 @@ a{
 }
 
 .topBar{
-    background-color:#6A5E72;
+    background-color:#4F8699;
     color: white;
     height: 50px;
-    box-shadow: 0px 2px 15px 1px #6A5E72;
+    box-shadow: 0px 2px 15px 1px #4F8699
 }
 
 .boards{
@@ -35,7 +35,7 @@ a{
 
 .boardTitleDiv{
     text-align: center;
-    background-color: #6A5E72;
+    background-color: #4F8699;
     color: white;
     height: 100%;
 }
@@ -51,7 +51,7 @@ a{
 .button{
     width: 100% !important;
     height: 50px;
-    background-color: #4F8699;
+    background-color: #563444;
     color: #ffffff;
     border:none;
     font-size: 24px;
