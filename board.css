@@ -1,0 +1,111 @@
+body{
+    margin-bottom: 0px;
+}
+
+button{
+    background-color: #4F8699;
+    cursor: pointer;
+    color: white;
+    width: 100% !important;
+    height: 100px;
+    font-size: 24px !important;
+    border: none;
+    margin-bottom: 10px !important;
+}
+
+#modal{
+    display: none;
+    /* background-color: rgba(0,0,0,0.8); */
+    position: fixed !important;
+    height: 100% !important;
+    width:100% !important;
+    overflow:auto;
+    animation-name: openModal;
+    animation-duration: 1s;
+}
+
+.topBar{
+    background-color: #4F8699;
+    color: white;
+}
+
+.questionDiv{
+    margin-bottom: 50px;
+}
+
+.answerDiv{
+    display: none;
+}
+
+.answer{
+    font-weight: bold;
+    color: #563444;
+}
+
+#title{
+    font-size: 50px !important;
+}
+
+.cataName{
+    max-height: 50px !important;
+}
+
+.center-align{
+    font-size: 24px !important;
+    padding: 20px;
+    margin-bottom: 50px !important;
+}
+
+@keyframes openModal{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+#close{
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#close:hover{
+    color: red;
+}
+
+.teams{
+    margin-top: 150px;
+    margin-bottom: 0px !important;
+    height: 50px;
+    background-color:#4F8699;
+    box-shadow: 0px -2px 15px 1px #4F8699;
+}
+
+#plus{
+    height: 40px;
+    color: lightgreen;
+    cursor: pointer;
+}
+
+.team{
+    margin-bottom: 0px !important;
+    color: white;
+}
+
+.plus{
+    height: 35px;
+}
+
+.minus{
+    height: 35px;
+}
+
+.teamThreeDiv{
+    display: none;
+}
+
+.teamTwoDiv{
+    display: none;
+}
+
+.teamOneDiv{
+    display: none;
+}
+

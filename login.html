@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Spanish Jeopardy — Admin Login</title>
+
+    <!-- Scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="row topBar">
+            <div class="col s10 siteTitle">
+                <h5>Spanish Jeopardy</h5>
+            </div>
+            <div class="col s2 adminDiv">
+                <h5 style="margin-left: 20px;"><a href="student.html">Student Side</a></h5>
+            </div>
+        </div>
+        <div class="screenContext">
+            <div class="adminText">
+                <h4>Admin Login</h4>
+            </div>
+            <div class="input email">
+                <input type="email" id="email" placeholder="Enter Email: ">
+            </div>
+            <div class="input pass">
+                <input type="password" id="pass" placeholder="Enter Password: ">
+            </div>
+            <div class="enterButton">
+                <!-- <a class="waves-effect waves-light btn">Enter</a> -->
+                <button id="enter" class="enter">Enter</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

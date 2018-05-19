@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="board.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Spanish Jeopardy — Student Side</title>
+
+    <!-- Scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="board.js"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="row topBar">
+            <div class="col s10 siteTitle">
+                <h5>Spanish Jeopardy - Board</h5>
+            </div>
+            <div class="col s2 backDiv">
+                <h5 style="margin-left: 20px;"><a href="#" id="goBack">Go Back</a></h5>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="row modalHeader">
+                <span id="close" class="col s12 right-align close">&times;</span>
+            </div>
+            <div class="row modalContent">
+                <div class="col s12 center-align questionDiv">
+                    <h4 class="question">Question</h4>
+                </div>
+                <div class="col s12 center-align check">
+                    <button id="check">Check</button>
+                </div>
+                <div class="col s12 center-align answerDiv">
+                    <h4 class="answer">Answer</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row boardContainer">
+            <div class="col s12 titleDiv">
+                <h2 class="center-align title" id="title"></h2>
+            </div>
+            <div class="col s3 cataOne">
+                <div class="cataName" id="cataName">
+                    <h4 class="center-align" id="cataNameOne"></h4>
+                </div>
+                <div class="c1q1">
+                    <button id="c1q1">100</button>
+                </div>
+                <div class="c1q2">
+                    <button id="c1q2">200</button>
+                </div>
+                <div class="c1q3">
+                    <button id="c1q3">300</button>
+                </div>
+                <div class="c1q4">
+                    <button id="c1q4">400</button>
+                </div>
+            </div>
+            <div class="col s3 cataTwo">
+                <div class="cataName" id="cataName">
+                    <h4 class="center-align" id="cataNameTwo"></h4>
+                </div>
+                <div class="c2q1">
+                    <button id="c2q1">100</button>
+                </div>
+                <div class="c2q2">
+                    <button id="c2q2">200</button>
+                </div>
+                <div class="c2q3">
+                    <button id="c2q3">300</button>
+                </div>
+                <div class="c2q4">
+                    <button id="c2q4">400</button>
+                </div>
+            </div>
+            <div class="col s3 cataThree">
+                <div class="cataName">
+                    <h4 class="center-align" id="cataNameThree"></h4>
+                </div>
+                <div class="c3q1">
+                    <button id="c3q1">100</button>
+                </div>
+                <div class="c3q2">
+                    <button id="c3q2">200</button>
+                </div>
+                <div class="c3q3">
+                    <button id="c3q3">300</button>
+                </div>
+                <div class="c3q4">
+                    <button id="c3q4">400</button>
+                </div>
+            </div>
+            <div class="col s3 cataFour">
+                <div class="cataName">
+                    <h4 class="center-align" id="cataNameFour"></h4>
+                </div>
+                <div class="c4q1">
+                    <button id="c4q1">100</button>
+                </div>
+                <div class="c4q2">
+                    <button id="c4q2">200</button>
+                </div>
+                <div class="c4q3">
+                    <button id="c4q3">300</button>
+                </div>
+                <div class="c4q4">
+                    <button id="c4q4">400</button>
+                </div>
+            </div>
+        </div>
+        <div class="row teams">
+            <div class="col s3 center-align team teamOneDiv">
+                <i class="small material-icons">looks_one</i>
+                <div class="row plusMinus">
+                    <div class="col s6 plusDiv">
+                        <button id="one" class="plus"><img src="add.png"></button>
+                    </div>
+                    <div class="col s6 minusDiv">
+                        <button id="one" class="minus"><img src="substract.png"></button>
+                    </div>
+                </div>
+                <div class="scoreDiv">
+                    <h5 id="scoreTeamOne">0</h5>
+                </div>
+            </div>
+            <div class="col s3 center-align team teamTwoDiv">
+                <i class="small material-icons">looks_two</i>
+                <div class="row plusMinus">
+                    <div class="col s6 plusDiv">
+                        <button id="two" class="plus"><img src="add.png"></button>
+                    </div>
+                    <div class="col s6 minusDiv">
+                        <button id="two" class="minus"><img src="substract.png"></button>
+                    </div>
+                </div>
+                <div class="scoreDiv">
+                    <h5 id="scoreTeamTwo">0</h5>
+                </div>
+            </div>
+            <div class="col s3 center-align team teamThreeDiv">
+                <i class="small material-icons">looks_3</i>
+                <div class="row plusMinus">
+                    <div class="col s6 plusDiv">
+                        <button id="three" class="plus"><img src="add.png"></button>
+                    </div>
+                    <div class="col s6 minusDiv">
+                        <button id="three" class="minus"><img src="substract.png"></button>
+                    </div>
+                </div>
+                <div class="scoreDiv">
+                    <h5 id="scoreTeamThree">0</h5>
+                </div>
+            </div>
+            <div class="col s1 offset-s11 plusButton">
+                <button id="plus"><i class="material-icons">add</i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" href="student.css"> -->
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Spanish Jeopardy — Teacher Side</title>
+
+    <!-- Scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="teacher.js"></script>
+</head>
+<body>
+    <div class="pageContainer">
+        <div class="row topBar">
+            <div class="col s7 siteTitle">
+                <h5>Spanish Jeopardy - Teacher</h5>
+            </div>
+            <div class="col s3 create">
+                <h5 style="margin-left: 20px;"><a href="create.html?id=NO_ID?mode=create">Create a Jeopardy!</a></h5>
+            </div>
+            <div class="col s2 adminDiv">
+                <h5 style="margin-left: 20px;"><a href="student.html">Student Side</a></h5>
+            </div>
+        </div>
+        <div class="row boards" id="boards">
+            
+        </div>
+    </div>
+</body>
+</html>

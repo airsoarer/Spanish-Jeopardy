@@ -1,0 +1,86 @@
+.create{
+    border-left: solid 1px #ffffff;
+}
+
+.topBar{
+    background-color: #563444;
+    box-shadow: 0px 2px 15px 1px #563444;
+}
+
+body{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white !important;
+    text-align: center;
+}
+
+.topBar{
+    color: white;
+    height: 50px;
+}
+
+.boards{
+    margin-top: 100px;
+}
+
+.pageContainer{
+    margin: 0px;
+}
+
+.adminDiv{
+    border-left: solid white 1px;
+}
+
+.button{
+    width: 100% !important;
+    height: 50px;
+    background-color: #4F8699;
+    color: #ffffff;
+    border:none;
+    font-size: 24px;
+}
+
+.boardDiv{
+    height: 200px !important;
+    margin-bottom: 50px !important;
+}
+
+.btnDiv{
+    height: 33% !important;
+}
+
+.editBtnDiv{
+    height: 33% !important;
+}
+
+.deleteBtnDiv{
+    height: 33% !important;
+}
+
+.deleteBtnDiv button{
+    background-color: #DAD6CA;
+    color: black;
+}
+
+.titleDiv{
+    background-color: #563444;
+    color: white;
+    height: 200px !important;
+}
+
+.boardAndTitleDescriptionDiv{
+    height: 100% !important;
+}
+
+button{
+    margin-bottom: 10px !important;
+    height: 60px !important;
+}
+
+.deleteTwo{
+    background-color: darkred;
+    color: white;
+}
