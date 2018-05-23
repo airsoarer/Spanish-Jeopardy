@@ -24,6 +24,14 @@ button{
     animation-duration: 1s;
 }
 
+.teamOneDiv{
+    border-right: white solid 1px;
+}
+
+.teamThreeDiv{
+    border-left: white solid 1px;
+}
+
 .topBar{
     background-color: #4F8699;
     color: white;
