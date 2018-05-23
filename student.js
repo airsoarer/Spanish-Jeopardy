@@ -32,7 +32,6 @@
             var boardTitleDiv = document.createElement("div");
             boardTitleDiv.classList.add("col");
             boardTitleDiv.classList.add("s8");
-            boardTitleDiv.classList.add("card");
             boardTitleDiv.classList.add("boardTitleDiv");
             boardTitleDiv.id = key + "titleDiv";
             boardTitleDiv.appendChild(h1);
