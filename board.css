@@ -25,10 +25,12 @@ button{
 }
 
 .teamOneDiv{
-    border-right: white solid 1px;
+    height: 100% !important;
+    border-right: white solid 2px;
 }
 
 .teamThreeDiv{
+    height: 100% !important;
     border-left: white solid 1px;
 }
 
