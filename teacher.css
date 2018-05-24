@@ -2,9 +2,22 @@
     border-left: solid 1px #ffffff;
 }
 
+@keyframes{
+    from{
+     background-color: #4F8699;
+     box-shadow: 0px 2px 15px 1px #4F8699;
+    }
+    
+    to{
+     background-color: #563444;   
+     box-shadow: 0px 2px 15px 1px #563444;
+    }
+}
+
 .topBar{
     background-color: #563444;
     box-shadow: 0px 2px 15px 1px #563444;
+    animation: bar 1.5s;
 }
 
 body{
@@ -68,7 +81,7 @@ a{
 @keyframes title{
     from{
      height: 0px;
-     background-color: #4F8699
+     background-color: #4F8699;
     }
     
     to{
