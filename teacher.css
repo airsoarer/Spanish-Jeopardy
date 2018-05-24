@@ -65,23 +65,13 @@ a{
     color: black;
 }
 
-@keyframes titleAnimation{
-    from{
-     height: 0px !important;   
-    }
-    
-    to{
-     height: 200px !important;   
-    }
-}
-
 .titleDiv{
     background-color: #563444;
     color: white;
     height: 200px !important;
     animation-name: titleAnimation;
     animation-duration: 4s;
-    animation-delay: 2s;
+/*     animation-delay: 2s; */
 }
 
 .boardAndTitleDescriptionDiv{
@@ -96,4 +86,14 @@ button{
 .deleteTwo{
     background-color: darkred;
     color: white;
+}
+
+@keyframes titleAnimation{
+    from{
+     height: 0px !important;   
+    }
+    
+    to{
+     height: 200px !important;   
+    }
 }
