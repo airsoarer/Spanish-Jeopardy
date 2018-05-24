@@ -2,7 +2,7 @@
     border-left: solid 1px #ffffff;
 }
 
-@keyframes{
+@keyframes bar{
     from{
      background-color: #4F8699;
      box-shadow: 0px 2px 15px 1px #4F8699;
