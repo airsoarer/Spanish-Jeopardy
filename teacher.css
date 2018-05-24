@@ -67,11 +67,11 @@ a{
 
 @keyframes title{
     from{
-     background-color: white !important;   
+     background-color: white;   
     }
     
     to{
-     background-color: black !important;   
+     background-color: black;   
     }
 }
 
