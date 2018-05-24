@@ -67,16 +67,16 @@ a{
 
 @keyframes title{
     from{
-     background-color: white;   
+     height: 0px;
     }
     
     to{
-     background-color: black;   
+     height: 200px;
     }
 }
 
 .titleDiv{
-/*     background-color: #563444; */
+    background-color: #563444;
     color: white;
     height: 200px !important;
     animation: title 3s;
