@@ -65,12 +65,22 @@ a{
     color: black;
 }
 
+@keyframes title{
+    from{
+     background-color: white !important;   
+    }
+    
+    to{
+     background-color: black !important;   
+    }
+}
+
 .titleDiv{
     background-color: #563444;
     color: white;
     height: 200px !important;
     animation: title 3s;
-    -moz-animation: title 3s;
+/*     -moz-animation: title 3s; */
 }
 
 .boardAndTitleDescriptionDiv{
@@ -85,14 +95,4 @@ button{
 .deleteTwo{
     background-color: darkred;
     color: white;
-}
-
-@keyframes title{
-    from{
-     opacity: 0 !important;   
-    }
-    
-    to{
-     opacity: 1 !important;   
-    }
 }
