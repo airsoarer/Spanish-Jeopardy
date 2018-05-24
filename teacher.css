@@ -69,7 +69,7 @@ a{
     background-color: #563444;
     color: white;
     height: 200px !important;
-    animation-name: titleAnimations;
+    animation-name: titleAnimation;
     animation-duration: 4s;
     animation-delay: 1s;
 }
