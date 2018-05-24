@@ -76,7 +76,7 @@ a{
 }
 
 .titleDiv{
-    background-color: #563444;
+/*     background-color: #563444; */
     color: white;
     height: 200px !important;
     animation: title 3s;
