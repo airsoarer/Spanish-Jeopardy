@@ -94,7 +94,7 @@ a{
     background-color: #563444;
     color: white;
     height: 200px;
-    animation: title 1s ease-in;
+    animation: title 1s;
 /*     -moz-animation: title 3s; */
 }
 
