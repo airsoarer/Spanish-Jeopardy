@@ -68,7 +68,7 @@ a{
 .titleDiv{
     background-color: #563444;
     color: white;
-    height: 200px !important;
+/*     height: 200px !important; */
     animation-name: titleAnimation;
     animation-duration: 4s;
     animation-delay: 1s;
@@ -90,10 +90,10 @@ button{
 
 @keyframes titleAnimation{
     from{
-     height: 0% !important;   
+     height: 0px !important;   
     }
     
     to{
-     height: 100% !important;   
+     height: 200px !important;   
     }
 }
