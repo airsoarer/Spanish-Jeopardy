@@ -89,15 +89,11 @@ button{
 }
 
 @keyframes titleAnimation{
-    0%{
+    from{
      height: 0% !important;   
     }
     
-    50%{
-     height: 50% !important;   
-    }
-    
-    100%{
+    to{
      height: 100% !important;   
     }
 }
