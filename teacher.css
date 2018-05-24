@@ -69,9 +69,8 @@ a{
     background-color: #563444;
     color: white;
     height: 200px !important;
-    animation-name: title;
-    animation-duration: 4s;
-/*     animation-delay: 2s; */
+    animation: title 3s;
+    -moz-animation: title 3s;
 }
 
 .boardAndTitleDescriptionDiv{
