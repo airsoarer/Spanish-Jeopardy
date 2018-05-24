@@ -69,7 +69,7 @@ a{
     background-color: #563444;
     color: white;
     height: 200px !important;
-    animation-name: titleAnimation;
+    animation-name: title;
     animation-duration: 4s;
 /*     animation-delay: 2s; */
 }
@@ -88,12 +88,12 @@ button{
     color: white;
 }
 
-@keyframes titleAnimation{
+@keyframes title{
     from{
-     height: 0px !important;   
+     opacity: 0 !important;   
     }
     
     to{
-     height: 200px !important;   
+     opacity: 1 !important;   
     }
 }
