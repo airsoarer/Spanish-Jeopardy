@@ -68,10 +68,12 @@ a{
 @keyframes title{
     from{
      height: 0px;
+     background-color: #4F8699
     }
     
     to{
      height: 200px;
+     background-color: #563444;
     }
 }
 
