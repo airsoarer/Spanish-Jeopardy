@@ -64,7 +64,7 @@ a{
     color: #ffffff;
     border:none;
     font-size: 24px;
-    animation: buttons 1s;
+    animation: buttons 1s reverse;
 }
 
 .boardDiv{
