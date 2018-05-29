@@ -49,11 +49,11 @@ a{
 
 @keyframes buttons{
     from{
-        width: 100%;   
+        width: 0%;   
     }
     
     to{
-        width: 0%;   
+        width: 100%;   
     }
 }
 
@@ -64,7 +64,7 @@ a{
     color: #ffffff;
     border:none;
     font-size: 24px;
-    animation: buttons 1s;
+    animation: buttons 1s reverse;
 }
 
 .boardDiv{
