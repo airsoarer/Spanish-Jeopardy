@@ -33,7 +33,7 @@ a{
     height: 126px;
 }
 
-@keyframes title{
+@keyframes board{
     from{
         width: 0%;   
     }
@@ -48,7 +48,6 @@ a{
     background-color: #4F8699;
     color: white;
     height: 100%;
-    animation: title 1s;
 }
 
 .btnDiv{
@@ -76,4 +75,5 @@ a{
 .boardDiv{
     height: 200px;
     margin-bottom: 50px !important;
+    animation: board 1s;
 }
