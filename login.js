@@ -14,6 +14,7 @@
         $('.enter').on('click', login);
         $('#enter').keyup(function(event){
             if(event.keyCode === 13){
+                console.log("working");
                 login();
             }
         });
