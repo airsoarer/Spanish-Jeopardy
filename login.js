@@ -12,7 +12,7 @@
     function init(){
         firebase.initializeApp(config);
         $('.enter').on('click', login);
-        $('#enter').keyup(function(event){
+        $('.enter').keyup(function(event){
             if(event.keyCode === 13){
                 console.log("working");
                 login();
@@ -36,7 +36,7 @@
         firebase.auth().onAuthStateChanged(firebaseUser =>{
             if(firebaseUser){
                 location.replace('teacher.html');
-            }else if(!firebaseUser){
+            }else{
                 alert("Incorrect Email or Password");
             }
         });
