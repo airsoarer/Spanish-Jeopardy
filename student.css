@@ -33,11 +33,22 @@ a{
     height: 126px;
 }
 
+@keyframes title{
+    from{
+        width: 0%;   
+    }
+    
+    to{
+        width: 100%;
+    }
+}
+
 .boardTitleDiv{
     text-align: center;
     background-color: #4F8699;
     color: white;
     height: 100%;
+    animation: title 1s;
 }
 
 .btnDiv{
